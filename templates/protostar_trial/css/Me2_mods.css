@@ -1,0 +1,219 @@
+/* CSS added by Kerstyn*/
+/* modified styling for the me2 menu page */
+#nav ul li a.backMenu{background-color:#4E5426; color:#FFFFFF;}
+
+
+/* Filter labels that show on the top of summarised post page*/
+.categoryFilters {
+	display: none;
+}
+
+/*.discuss-action-options {
+  display: none;
+}*/
+
+.discuss-date {
+  display: none;
+}
+
+
+.discuss-last-replied {
+  display: none;
+}
+
+
+.discussQuestion .discuss-content {
+  display: none;
+}
+
+.header {
+  margin: 0px;
+}
+
+/* resize logo for phones */
+@media only screen and (max-width: 768px) {
+.header .brand {
+    float: left;
+  text-align: left;
+ max-width: 8em;
+}
+.logout-button {
+    float: right;
+   max-width: 8em;
+}}
+
+/* Styling on Ask question page Easy Discuss */
+/*#discuss-tinymce {
+  display: none;
+}*/
+
+#dc_submit .tab-box {
+  display: none;
+}
+
+/* Customisations to the post page */
+
+
+div#discuss-wrapper .discuss-head hr {
+  border-top: 0px;
+  box-shadow: none;
+}
+
+h3 {
+  color: black;
+}
+
+div#discuss-wrapper [class*="span"]{
+  margin-left: 10px
+}
+
+
+div#discuss-wrapper .mb-15 {margin-bottom: 5px;}
+
+div#discuss-wrapper .mt-10 {
+  margin-top: 2px;
+}
+
+.discuss-item-right.postPage, .discuss-admin-row.postPage {
+  display: none;
+}
+
+div#discuss-wrapper.discuss-view-post .discuss-post-title {
+  line-height: 1em;
+  padding-right: 0px;
+}
+
+div#discuss-wrapper.discuss-view-post .discuss-item .discuss-item-hd {
+  border-bottom: 0px solid #333;
+}
+
+div#discuss-wrapper .discuss-item [
+	padding: 0px
+]
+
+
+div#discuss-wrapper .discuss-item .discuss-item-hd { 
+  padding: 0px 15px;
+}
+
+div#discuss-wrapper .discuss-item .discuss-content {
+  margin-bottom: 0px;
+}
+
+div#discuss-wrapper .ph-10 {
+  padding-left: 0px;
+}
+
+
+
+/* reply list */
+
+div#discuss-wrapper .discuss-replies{
+  margin-top: 5px;
+}
+
+div#discuss-wrapper .discuss-list > li{
+  margin-bottom: 0;
+}
+
+/* hide the sort tabs */
+ul.nav.nav-tabs{
+  display: none;
+}
+
+
+/*reply content*/
+div#discuss-wrapper.w320 .discuss-item .discuss-item-left {
+  display: none;
+}
+
+div#discuss-wrapper .discuss-item{
+  padding-bottom: 10px;
+}
+
+div#discuss-wrapper .discuss-replies .discuss-item-right{
+  min-height: 0px;
+}
+
+div#discuss-wrapper .discuss-story .discuss-story-hd {
+  min-height: 0px;
+}
+
+div#discuss-wrapper.discuss-view-post .discuss-replies .discuss-story .discuss-story-hd {
+  height: 0px; 
+}
+
+/* reply button */
+.pull-right.mb-15{
+  display: none;
+}
+
+div#discuss-wrapper.w600 .pull-right{
+  float: right;
+}
+
+/*hide accept answer button */
+div#discuss-wrapper .discuss-accept-answer {
+  display: none;
+}
+
+/* reply text*/
+h3.discuss-content-item {
+  margin: 0.1em 0em;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+/* reply comments*/
+div#discuss-wrapper .discuss-comments{
+  margin: 0;
+}
+
+
+div#discuss-wrapper .mb-10 {
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+  
+}
+
+/*Line below 'Your Reply'*/
+div#discuss-wrapper hr {
+  border-bottom: 0px;
+  border-top: 0px;
+}
+
+/* size of reply box */
+textarea#dc_reply_content {
+  height: 100px !important;
+}
+
+/* post reply buttons, like article */
+#editor-xtd-buttons {
+  display: none !important;
+}
+
+.tab-content.formTabsContent {
+  padding: 0px !important;
+}
+
+div#discuss-wrapper .form-actions, #discuss-dialog .form-actions {
+  background-color: white !important;
+  padding: 0px 20px 16px !important;
+  margin: 0px !important;
+  border-top: 0px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  div#discuss-wrapper.discuss-view-post .discuss-post-title {
+    font-size: 16px;
+}
+  div#discuss-wrapper .discuss-item .discuss-item-hd {
+    padding: 0px;
+  }
+  h3.discuss-content-item {
+    font-size: 14px;
+  }
+
+}
