@@ -7,7 +7,7 @@
  *
  * @copyright   (C) 2008 - 2016 Kunena Team. All rights reserved.
  * @license         http://www.gnu.org/copyleft/gpl.html GNU/GPL
- * @link            http://www.kunena.org
+ * @link            https://www.kunena.org
  **/
 defined('_JEXEC') or die ();
 
@@ -260,9 +260,7 @@ if (KunenaFactory::getTemplate()->params->get('formRecover'))
 						<?php endif; ?>
 						<?php if (!empty($this->captchaEnabled)) : ?>
 							<div class="control-group">
-								<label class="control-label"><?php echo JText::_('COM_KUNENA_CAPDESC'); ?></label>
-
-								<div class="controls"> <div id="dynamic_recaptcha_1"> </div> </div>
+								<?php echo $this->captchaDisplay;?>
 							</div>
 						<?php endif; ?>
 

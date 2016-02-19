@@ -6,7 +6,7 @@
  *
  * @copyright   (C) 2008 - 2016 Kunena Team. All rights reserved.
  * @license     http://www.gnu.org/copyleft/gpl.html GNU/GPL
- * @link        http://www.kunena.org
+ * @link        https://www.kunena.org
  **/
 defined('_JEXEC') or die;
 
@@ -127,7 +127,7 @@ $topicicontype = $this->ktemplate->params->get('topicicontype');
 					<div class="controls">
 						<input type="text" name="subject" id="ktitle_moderate_subject" value="<?php echo !isset($this->message)
 							? $this->topic->displayField('subject')
-							: $this->message->displayField('subject'); ?>"/>
+							: $this->message->displayField('subject'); ?>" maxlength="<?php echo $this->escape($this->config->maxsubject); ?>"/>
 					</div>
 				</div>
 				<?php if (!empty($this->replies)) : ?>

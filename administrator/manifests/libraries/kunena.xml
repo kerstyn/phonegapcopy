@@ -3,12 +3,12 @@
 <extension type="library" version="2.5" method="upgrade">
 	<name>Kunena Framework</name>
 	<libraryname>kunena</libraryname>
-	<version>4.0.9</version>
-	<versionname>London</versionname>
-	<creationDate>2016-01-21</creationDate>
+	<version>4.0.10</version>
+	<versionname>Villavicencio</versionname>
+	<creationDate>2016-02-18</creationDate>
 	<author>Kunena Team</author>
 	<authorEmail>kunena@kunena.org</authorEmail>
-	<authorUrl>http://www.kunena.org</authorUrl>
+	<authorUrl>https://www.kunena.org</authorUrl>
 	<copyright>(C) 2008 - 2016 Kunena Team. All rights reserved.</copyright>
 	<license>GNU/GPLv3 or later</license>
 	<description>Kunena Framework.</description>

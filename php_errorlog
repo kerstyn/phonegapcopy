@@ -1,0 +1,4 @@
+[18-Feb-2016 07:29:23 CST6CDT] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/me2trial/public_html/staging/components/com_easydiscuss/helpers/string.php on line 119
+[18-Feb-2016 07:29:36 CST6CDT] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/me2trial/public_html/staging/components/com_easydiscuss/helpers/string.php on line 119
+[18-Feb-2016 07:29:55 CST6CDT] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/me2trial/public_html/staging/components/com_easydiscuss/helpers/string.php on line 119
+[18-Feb-2016 07:30:25 CST6CDT] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/me2trial/public_html/staging/components/com_easydiscuss/helpers/string.php on line 119

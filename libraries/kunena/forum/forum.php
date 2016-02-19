@@ -6,7 +6,7 @@
  *
  * @copyright (C) 2008 - 2016 Kunena Team. All rights reserved.
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
- * @link http://www.kunena.org
+ * @link https://www.kunena.org
  **/
 defined ( '_JEXEC' ) or die ();
 
@@ -213,7 +213,7 @@ abstract class KunenaForum
 	 */
 	public static function isDev()
 	{
-		if ('4.0.9' == '@' . 'kunenaversion' . '@')
+		if ('4.0.10' == '@' . 'kunenaversion' . '@')
 		{
 			return true;
 		}
@@ -398,7 +398,7 @@ abstract class KunenaForum
 
 	protected static function buildVersion()
 	{
-		if ('4.0.9' == '@' . 'kunenaversion' . '@')
+		if ('4.0.10' == '@' . 'kunenaversion' . '@')
 		{
 			$file = JPATH_MANIFESTS . '/packages/pkg_kunena.xml';
 			$manifest = simplexml_load_file($file);
@@ -406,11 +406,11 @@ abstract class KunenaForum
 		}
 		else
 		{
-			self::$version = strtoupper ( '4.0.9' );
+			self::$version = strtoupper ( '4.0.10' );
 		}
 
 		self::$version_major = substr(self::$version, 0, 3);
-		self::$version_date = ('2016-01-21' == '@' . 'kunenaversiondate' . '@') ? JFactory::getDate()->format('Y-m-d') : '2016-01-21';
-		self::$version_name = ('London' == '@' . 'kunenaversionname' . '@') ? 'Git Repository' : 'London';
+		self::$version_date = ('2016-02-18' == '@' . 'kunenaversiondate' . '@') ? JFactory::getDate()->format('Y-m-d') : '2016-02-18';
+		self::$version_name = ('Villavicencio' == '@' . 'kunenaversionname' . '@') ? 'Git Repository' : 'Villavicencio';
 	}
 }

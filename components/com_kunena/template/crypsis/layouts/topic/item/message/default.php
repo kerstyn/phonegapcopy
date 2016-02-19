@@ -6,7 +6,7 @@
  *
  * @copyright   (C) 2008 - 2016 Kunena Team. All rights reserved.
  * @license     http://www.gnu.org/copyleft/gpl.html GNU/GPL
- * @link        http://www.kunena.org
+ * @link        https://www.kunena.org
  **/
 defined('_JEXEC') or die;
 $topicStarter = $this->topic->first_post_userid == $this->message->userid;
@@ -54,4 +54,4 @@ if ($direction === "left") : ?>
 
 <?php endif; ?>
 
-<?php echo $this->subLayout('Widget/Module')->set('position', 'kunena_msg_' . $this->location); ?>
+<?php echo $this->subLayout('Widget/Module')->set('position', 'kunena_msg_' . $this->message->replynum); ?>

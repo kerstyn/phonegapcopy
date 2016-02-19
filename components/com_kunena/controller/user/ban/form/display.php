@@ -6,7 +6,7 @@
  *
  * @copyright   (C) 2008 - 2016 Kunena Team. All rights reserved.
  * @license     http://www.gnu.org/copyleft/gpl.html GNU/GPL
- * @link        http://www.kunena.org
+ * @link        https://www.kunena.org
  **/
 defined('_JEXEC') or die;
 
@@ -67,7 +67,7 @@ class ComponentKunenaControllerUserBanFormDisplay extends KunenaControllerDispla
 			$params             = $menu_item->params; // get the params
 			$params_title       = $params->get('page_title');
 			$params_keywords    = $params->get('menu-meta_keywords');
-			$params_description = $params->get('menu-description');
+			$params_description = $params->get('menu-meta_description');
 
 			if (!empty($params_title))
 			{

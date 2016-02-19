@@ -1,6 +1,20 @@
 /* CSS added by Kerstyn*/
+
+/* centre the login module on homepage*/
+
+.moduletable.login_btn.span2 {
+  width: 100%;
+}
+
+#modlgn-remember {
+    float: inherit;
+    /* padding-bottom: 10px; */
+    margin-top: 0px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
 /* modified styling for the me2 menu page */
-#nav ul li a.backMenu{background-color:#4E5426; color:#FFFFFF;}
+#nav ul li a.backMenu {background-color:#4E5426; color:#FFFFFF;}
 
 
 /* Filter labels that show on the top of summarised post page*/
@@ -87,9 +101,9 @@ div#discuss-wrapper.discuss-view-post .discuss-item .discuss-item-hd {
   border-bottom: 0px solid #333;
 }
 
-div#discuss-wrapper .discuss-item [
+div#discuss-wrapper .discuss-item {
 	padding: 0px
-]
+}
 
 
 div#discuss-wrapper .discuss-item .discuss-item-hd { 

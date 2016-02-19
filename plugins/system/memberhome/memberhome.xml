@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - Member Home</name>
+	<author>Joomladds @ River Media</author>
+	<creationDate>April 2015</creationDate>
+	<copyright>Copyright (C) 2012-2015 River Media. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joomladds.com</authorEmail>
+	<authorUrl>http://joomladds.com</authorUrl>
+	<version>1.1.0</version>
+	<description>PLG_SYSTEM_MEMBERHOME_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="memberhome">memberhome.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>fields</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_memberhome.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_memberhome.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/memberhome/fields">
+			<fieldset name="customize">
+				<field
+					name="menuId"
+					type="menuitem"
+					default="0"
+					class="chzn-color-state"
+					required="1"
+					label="PLG_SYSTEM_MEMBERHOME_FIELD_MENUID_LABEL"
+					description="PLG_SYSTEM_MEMBERHOME_FIELD_MENUID_DESC" >
+					<option	value="0">PLG_SYSTEM_MEMBERHOME_DEFAULT_LABEL</option>
+				</field>
+				<field type="break" label="Ignored Items" />
+				<field name="ignore_urls" type="textarea" rows="10" default="" label="PLG_SYSTEM_MEMBERHOME_FIELD_IGNORE_URLS_LABEL" description="PLG_SYSTEM_MEMBERHOME_FIELD_IGNORE_URLS_DESC" />
+				<field name="ignore_options" type="textarea" rows="10" default="" label="PLG_SYSTEM_MEMBERHOME_FIELD_IGNORE_OPTIONS_LABEL" description="PLG_SYSTEM_MEMBERHOME_FIELD_IGNORE_OPTIONS_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="JoomLadds Update Site">http://joomladds.com/index.php?option=com_ars&amp;view=update&amp;task=stream&amp;format=xml&amp;id=10</server>
+	</updateservers>
+</extension>

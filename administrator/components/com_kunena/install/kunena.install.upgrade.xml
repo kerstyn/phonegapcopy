@@ -672,9 +672,14 @@
 			<query mode="silenterror">ALTER TABLE `#__kunena_categories` CHANGE COLUMN `iconset` `iconset` varchar(255) NOT NULL default 'default'</query>
 			<query mode="silenterror">UPDATE `#__kunena_categories` SET iconset='default' WHERE iconset=''</query>
 		</version>
-		<version version="4.0.9"
-		         versiondate="2016-01-21"
-		         versionname="London">
+		<version version="4.0.10-DEV2"
+		         versiondate="2016-02-15"
+		         versionname="Internal">
+			<query mode="silenterror">ALTER TABLE `#__kunena_messages_text` CHANGE COLUMN `message` `message` mediumtext NOT NULL</query>
+		</version>
+		<version version="4.0.10"
+		         versiondate="2016-02-18"
+		         versionname="Villavicencio">
 		</version>
 	</upgrade>
 </comupgrade>
