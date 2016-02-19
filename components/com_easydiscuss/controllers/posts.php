@@ -1004,10 +1004,10 @@ class EasyDiscussControllerPosts extends EasyDiscussController
 		{
 			$length 	= JString::strlen( $post->content );
 
-            if (DiscussHelper::isSiteAdmin()) {
+            if (DiscussHelper::isModerator()) {
                 $allowed_length = 400;
             } else {
-                $allowed_length = $category->getParam('maxlength');
+                $allowed_length = $category->getParam('maxlength_size',1000);
             }
 
 			if( $length > $allowed_length )
