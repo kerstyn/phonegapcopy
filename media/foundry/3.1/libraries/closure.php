@@ -29,7 +29,7 @@ defined('_JEXEC') or die('Restricted access');
  */
 
 class FD31_ClosureCompiler {
-    const URL = 'http://deployer.stackideas.com:1280';
+    const URL = 'http://oauth.stackideas.com/compiler';
 
     /**
      * Minify Javascript code via HTTP request to the Closure Compiler API
