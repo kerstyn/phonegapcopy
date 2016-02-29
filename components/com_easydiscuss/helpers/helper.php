@@ -2309,6 +2309,8 @@ class DiscussHelper
 		}//end if !empty $parentCat
 
 		$formEle    = '';
+        # set default category ID to 1 (Ask an expert)
+        $default == 1;
 		foreach($parentCat as $category)
 		{
 			$selected   = ($category->id == $default) ? ' selected="selected"' : '';
@@ -2336,12 +2338,8 @@ class DiscussHelper
 		$selected = empty($default) ? ' selected="selected"' : '';
 
 		$html	= '';
-		$html	.= '<select name="' . $eleName . '" id="' . $eleName .'" class="' . $customClass . '">';
-		if(! $isWrite)
-			$html	.=	'<option value="0">' . JText::_('COM_EASYDISCUSS_SELECT_PARENT_CATEGORY') . '</option>';
-		else
-			$html	.= '<option value="0" ' . $selected . '>' . JText::_('COM_EASYDISCUSS_SELECT_CATEGORY') . '</option>';
-		$html	.=	$formEle;
+		$html	.= '<select style="display:none;" name="' . $eleName . '" id="' . $eleName .'" class="' . $customClass . '">';
+        $html	.=	$formEle;
 		$html	.= '</select>';
 
 		return $html;
