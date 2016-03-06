@@ -75,7 +75,6 @@ defined('_JEXEC') or die('Restricted access');
 
 							<div class="discuss-user-name fs-11">
 								<?php echo JText::_('COM_EASYDISCUSS_BY'); ?>
-								<a class="" href="<?php echo $post->getOwner()->link;?>">
 									<strong>
 										<?php if( !$post->user_id ){ ?>
 											<?php echo $post->poster_name; ?>
@@ -83,7 +82,6 @@ defined('_JEXEC') or die('Restricted access');
 											<?php echo $post->getOwner()->name;?>
 										<?php } ?>
 									</strong>
-								</a>
 							</div>
 					</div>
 

@@ -90,13 +90,11 @@ $isRecent	= ( $post->isnew ) ? ' is-recent' : '';
 
 							<span class="discuss-user-name mv- fs-11">
 								<?php echo JText::_('COM_EASYDISCUSS_BY'); ?>
-								<a href="<?php echo $post->user->getLink();?>">
 								<?php if( !$post->user_id ){ ?>
 									<?php echo $post->poster_name; ?>
 								<?php } else { ?>
 									<?php echo $post->user->getName();?>
 								<?php } ?>
-								</a>
 							</span>
 						</div>
 

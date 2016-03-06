@@ -35,13 +35,11 @@ defined('_JEXEC') or die('Restricted access');
                         <?php echo JText::_( 'COM_EASYDISCUSS_POSTED_IN' );?> <a href="<?php echo DiscussRouter::getCategoryRoute( $category->id );?>"><?php echo $category->getTitle();?></a>
 			<span class="discuss-user-name mv- fs-11">
 			   <?php echo JText::_('COM_EASYDISCUSS_BY'); ?>
-			   <a href="<?php echo $post->user->getLink();?>">
 			      <?php if( !$post->user_id ){ ?>
 			         <?php echo $post->poster_name; ?>
 			      <?php } else { ?>
 			         <?php echo $post->user->getName();?>
 			      <?php } ?>
-			   </a>
 			</span>
 		</div>
 
