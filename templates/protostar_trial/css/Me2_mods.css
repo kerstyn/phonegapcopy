@@ -1,8 +1,19 @@
 /* CSS added by Kerstyn*/
 /* modified styling for the me2 menu page */
 
-/*new comment to test if git is working */
-/*here is the second test to check pull from bitbucket */
+/* centre the login module on homepage*/
+.moduletable.login_btn.span2 {
+    width: 100%;
+}
+
+#modlgn-remember {
+   float: inherit;
+   /* padding-bottom: 10px; */
+   margin-top: 0px;
+   margin-bottom: 2px;
+   margin-left: 2px;
+}
+
 #nav ul li a.backMenu{background-color:#4E5426; color:#FFFFFF;}
 
 
@@ -90,9 +101,9 @@ div#discuss-wrapper.discuss-view-post .discuss-item .discuss-item-hd {
   border-bottom: 0px solid #333;
 }
 
-div#discuss-wrapper .discuss-item [
+div#discuss-wrapper .discuss-item {
 	padding: 0px
-]
+}
 
 
 div#discuss-wrapper .discuss-item .discuss-item-hd { 
