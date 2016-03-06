@@ -32,7 +32,6 @@ defined('_JEXEC') or die('Restricted access');
 <!-- ADDED BY KERSTYN - poster and category info -->
                 <div class="fs-11">
 		        <i class="icon-inbox"></i>
-                        <?php echo JText::_( 'COM_EASYDISCUSS_POSTED_IN' );?> <a href="<?php echo DiscussRouter::getCategoryRoute( $category->id );?>"><?php echo $category->getTitle();?></a>
 			<span class="discuss-user-name mv- fs-11">
 			   <?php echo JText::_('COM_EASYDISCUSS_BY'); ?>
 			      <?php if( !$post->user_id ){ ?>
@@ -55,7 +54,6 @@ defined('_JEXEC') or die('Restricted access');
 			<div class="discuss-category-meta pull-left">
 				<div class="pull-left fs-11">
 					<i class="icon-inbox"></i>
-					<?php echo JText::_( 'COM_EASYDISCUSS_POSTED_IN' );?> <a href="<?php echo DiscussRouter::getCategoryRoute( $category->id );?>"><?php echo $category->getTitle();?></a>
 				</div>
 			</div>
 

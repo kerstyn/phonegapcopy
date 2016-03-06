@@ -85,8 +85,6 @@ $isRecent	= ( $post->isnew ) ? ' is-recent' : '';
 
 						<div class="fs-11">
 							<i class="icon-inbox"></i>
-							<?php echo JText::_( 'COM_EASYDISCUSS_POSTED_IN' ); ?>
-							<a href="<?php echo DiscussRouter::getCategoryRoute( $post->category_id ); ?>"><?php echo $post->category; ?></a>
 
 							<span class="discuss-user-name mv- fs-11">
 								<?php echo JText::_('COM_EASYDISCUSS_BY'); ?>
