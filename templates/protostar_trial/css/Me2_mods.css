@@ -208,14 +208,21 @@ div#discuss-wrapper .form-actions, #discuss-dialog .form-actions {
   border-top: 0px !important;
 }
 
-@media only screen and (max-width: 768px) {
-  div#discuss-wrapper.discuss-view-post .discuss-post-title {
-    font-size: 16px;
+div#post_by.fs-11 {
+    padding: 0px 15px;
 }
-  div#discuss-wrapper .discuss-item .discuss-item-hd {
-    padding: 0px;
-  }
-  h3.discuss-content-item {
-    font-size: 14px;
-  }
 
+@media only screen and (max-width: 768px) {
+    div#discuss-wrapper.discuss-view-post .discuss-post-title {
+        font-size: 16px;
+    }
+    div#discuss-wrapper .discuss-item .discuss-item-hd {
+        padding: 0px;
+    }
+    h3.discuss-content-item {
+        font-size: 14px;
+    }
+    div#post_by.fs-11 {
+        padding: 0px 0px;
+    }
+}

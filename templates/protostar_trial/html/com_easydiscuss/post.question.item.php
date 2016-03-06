@@ -30,23 +30,19 @@ defined('_JEXEC') or die('Restricted access');
 			<?php echo DiscussHelper::getSubscriptionHTML($system->my->id, $post->id, 'post'); ?>
 		</div>
 <!-- ADDED BY KERSTYN - poster and category info -->
-                <div class="fs-11">
-		        <i class="icon-inbox"></i>
-			<span class="discuss-user-name mv- fs-11">
-			   <?php echo JText::_('COM_EASYDISCUSS_BY'); ?>
-			      <?php if( !$post->user_id ){ ?>
-			         <?php echo $post->poster_name; ?>
-			      <?php } else { ?>
-			         <?php echo $post->user->getName();?>
-			      <?php } ?>
-			</span>
-		</div>
-
-
-		<div class="row-fluid">
-
-		</div>
 	</div>
+
+    <div id="post_by" class="fs-11">
+        <i class="icon-inbox"></i>
+        <span class="discuss-user-name mv- fs-11">
+           <?php echo JText::_('COM_EASYDISCUSS_BY'); ?>
+              <?php if( !$post->user_id ){ ?>
+                 <?php echo $post->poster_name; ?>
+              <?php } else { ?>
+                 <?php echo $post->user->getName();?>
+              <?php } ?>
+        </span>
+    </div>
 	
 	<!-- MODIFIED BY KERSTYN - hide this section
 	<div class="discuss-post-sub-header">
