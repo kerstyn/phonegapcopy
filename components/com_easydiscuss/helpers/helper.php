@@ -2309,8 +2309,6 @@ class DiscussHelper
 		}//end if !empty $parentCat
 
 		$formEle    = '';
-        # set default category ID to 1 (Ask an expert)
-        $default == 1;
 		foreach($parentCat as $category)
 		{
 			$selected   = ($category->id == $default) ? ' selected="selected"' : '';
@@ -2333,14 +2331,9 @@ class DiscussHelper
 			$formEle   .= '<option value="' . $category->id . '" ' . $selected . $disabled . $style . '>' . JText::_( $category->title ) . '</option>';
 
 			DiscussHelper::accessNestedCategories($category, $formEle, '0', $default, $outType , '' , $disableContainers );
-		}
+        }
 
-		$selected = empty($default) ? ' selected="selected"' : '';
-
-		$html	= '';
-		$html	.= '<select style="display:none;" name="' . $eleName . '" id="' . $eleName .'" class="' . $customClass . '">';
-        $html	.=	$formEle;
-		$html	.= '</select>';
+        $html = '<select style="display:none;" name="mod_post_topic_category_id" id="mod_post_topic_category_id" class="inputbox full-width"><option value="0">Who is this for?</option><option value="1" selected="selected">Ask an expert</option></select>';
 
 		return $html;
 	}
