@@ -12,6 +12,8 @@
 defined('_JEXEC') or die('Restricted access');
 
 jimport( 'joomla.application.component.view');
+jimport('joomla.log.log');
+JLog::addLogger(array()); #otherwise, log path not configured
 
 require_once JPATH_ROOT . '/components/com_easydiscuss/helpers/helper.php';
 require_once DISCUSS_HELPERS . '/input.php';
@@ -981,6 +983,21 @@ class EasyDiscussViewPost extends EasyDiscussView
             // Append result
             $output = array();
             $output[ 'message' ]    = JText::_('COM_EASYDISCUSS_ERROR_REPLY_EMPTY');
+            $output[ 'type' ]       = 'error';
+
+            echo $this->_outputJson( $output );
+            return false;
+        }
+
+        $post_length = JString::strlen($post['dc_reply_content']);
+        if (DiscussHelper::isModerator()) {
+            $allowed_length = 400;
+        } else {
+            $allowed_length = 200;
+        }
+        if ($post_length > $allowed_length) {
+            $output = array();
+            $output[ 'message' ]    = JText::sprintf('COM_EASYDISCUSS_ERROR_REPLY_MAXIMUM_LENGTH_EXCEEDED', $allowed_length);
             $output[ 'type' ]       = 'error';
 
             echo $this->_outputJson( $output );
@@ -2747,12 +2764,30 @@ class EasyDiscussViewPost extends EasyDiscussView
 
     public function checkEmpty( $post , $ajax )
     {
+
         // do checking here!
         if( empty( $post[ 'content' ] ) )
         {
             $ajax->reject('error', JText::_('COM_EASYDISCUSS_ERROR_REPLY_EMPTY'));
             $ajax->send();
 
+            exit;
+        }
+        # some extra checking for max length:
+        $post_length = JString::strlen($post['content']);
+        if (DiscussHelper::isModerator()) {
+            $allowed_length = 400;
+        } else {
+            $allowed_length = 200;
+        }
+
+        JLog::add(JText::_($allowed_length), JLog::WARNING);
+
+        JLog::add(JText::_($post_length), JLog::WARNING);
+
+        if ($post_length > $allowed_length) {
+            $ajax->reject('error', JText::sprintf('COM_EASYDISCUSS_ERROR_REPLY_MAXIMUM_LENGTH_EXCEEDED', $allowed_length));
+            $ajax->send();
             exit;
         }
     }
