@@ -19,7 +19,6 @@ defined('_JEXEC') or die('Restricted access');
 	<div class="discuss-item-left discuss-user discuss-user-role-<?php echo $post->getOwner()->roleid; ?>">
 
 
-		<a href="<?php echo $post->getOwner()->link;?>">
 			<?php if ($system->config->get( 'layout_avatar' ) && $system->config->get( 'layout_avatar_in_post' )) { ?>
 				<div class="discuss-avatar avatar-medium">
 					<img src="<?php echo $post->getOwner()->avatar;?>" alt="<?php echo $this->escape( $post->getOwner()->name );?>" />
@@ -29,7 +28,6 @@ defined('_JEXEC') or die('Restricted access');
 			<div class="discuss-user-name mv-5">
 				<?php echo $post->getOwner()->name; ?>
 			</div>
-		</a>
 
 		<?php if( empty( $post->user_id ) ) { ?>
 			<span class="fs-11">
