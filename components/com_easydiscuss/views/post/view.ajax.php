@@ -12,8 +12,6 @@
 defined('_JEXEC') or die('Restricted access');
 
 jimport( 'joomla.application.component.view');
-jimport('joomla.log.log');
-JLog::addLogger(array()); #otherwise, log path not configured
 
 require_once JPATH_ROOT . '/components/com_easydiscuss/helpers/helper.php';
 require_once DISCUSS_HELPERS . '/input.php';
