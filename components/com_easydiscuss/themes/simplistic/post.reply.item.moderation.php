@@ -54,30 +54,31 @@ defined('_JEXEC') or die('Restricted access');
 				</div>
 			</div>
 
-			<div class="discuss-story-bd mb-10">
-
-				<div class="ph-10">
-
-					<div class="discuss-content">
-						<div class="discuss-content-item">
-							<?php echo DiscussHelper::bbcodeHtmlSwitcher( $post, 'reply', false ); ?>
-							<br />
-							<div id="comment-notification-<?php echo $post->id; ?>">
-								<div class="alert alert-error" style="padding: 5px">
-									<?php echo JText::_( 'COM_EASYDISCUSS_REPLY_UNDER_MODERATE' ); ?>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
 
 			<div class="fd-cf">
 				<a class="pull-right" href="#<?php echo JText::_( 'COM_EASYDISCUSS_TOP_ANCHOR' , true );?>" title="<?php echo JText::_( 'COM_EASYDISCUSS_BACK_TO_TOP' , true );?>"><i class="icon-circle-arrow-up"></i></a>
 			</div>
 		</div>
+
+        <div class="discuss-story-bd mb-10">
+
+            <div class="ph-10">
+
+                <div class="discuss-content">
+                    <div class="discuss-content-item">
+                        <?php echo DiscussHelper::bbcodeHtmlSwitcher( $post, 'reply', false ); ?>
+                        <br />
+                        <div id="comment-notification-<?php echo $post->id; ?>">
+                            <div class="alert alert-error" style="padding: 5px">
+                                <?php echo JText::_( 'COM_EASYDISCUSS_REPLY_UNDER_MODERATE' ); ?>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 	</div>
 
