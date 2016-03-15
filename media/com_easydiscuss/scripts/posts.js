@@ -49,7 +49,8 @@ EasyDiscuss.module('posts', function($) {
 						var errorString = '';
 						var isError = false;
 
-						var selectedCategory = $('.discuss-form *[name=category_id]').val();
+                        //hardcoding category ID for now.
+						var selectedCategory = 1;
 
 						if (selectedCategory == 0 || selectedCategory.length == 0)
 						{
