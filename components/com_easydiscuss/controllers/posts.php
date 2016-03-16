@@ -1394,7 +1394,7 @@ class EasyDiscussControllerPosts extends EasyDiscussController
 			break;
 
 			case 'home':
-				$redirect = DiscussRouter::_( 'index.php?option=com_easydiscuss&view=index', false );
+				$redirect = DiscussRouter::_( 'index.php?option=com_easydiscuss&view=index&posted=true', false );
 			break;
 
 			case 'mainCategory':
@@ -1408,8 +1408,7 @@ class EasyDiscussControllerPosts extends EasyDiscussController
 			default:
 				$redirect = DiscussRouter::getPostRoute( $post->id , false );
 			break;
-		}
-
+        }
 
 		$this->setRedirect( $redirect );
 	}
