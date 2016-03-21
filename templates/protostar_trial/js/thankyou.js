@@ -43,9 +43,16 @@ window.onload = function() {
         thankyou.style['margin-left'] = 'auto';
         thankyou.style['margin-right'] = 'auto';
         parent.insertBefore(thankyou, post_question);
+
         thankyou.addEventListener('click', function() {
             thankyou.style.display = 'none';
             post_question.style.display = 'block';
         });
+
+        //set timeout do to the same
+        setTimeout(function() {
+            thankyou.style.display = 'none';
+            post_question.style.display = 'block';
+        }, 8000);
     }
 }
