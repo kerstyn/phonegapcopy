@@ -4436,6 +4436,8 @@ EasyDiscuss.module('posts', function($) {
 				return{
 					init: function()
 					{
+                        //DOM tree's non-branching path goes: div.row-fluid > div.span12 > div.control-group > input#ez-title
+                        $('#ez-title').parent().parent().parent().css('display', 'none');
 					},
 
 					'{submitDiscussion} click' : function()
@@ -4447,6 +4449,11 @@ EasyDiscuss.module('posts', function($) {
 							return;
 						}
 						//$(this).prop('disabled' , true);
+                        
+                        //do a bit of copying around content:
+						// this discuss.getContent is a function from form.new.php
+						var dcReplyContent = discuss.getContent();
+                        $('#ez-title').val(dcReplyContent);
 
 						var errorString = '';
 						var isError = false;

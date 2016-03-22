@@ -1,3 +1,4 @@
 /configuration.php
 /tmp
 *.log
+plugins/system/jSGCache
