@@ -34,6 +34,8 @@ window.onload = function() {
         var siteroot  = document.getElementById('siteroot').innerHTML;
         var post_question = document.getElementsByClassName('moduletable')[0];
         post_question.style.display = 'none';
+        var discuss_wrapper = document.getElementById('discuss-wrapper');
+        discuss_wrapper.style.display = 'none';
 
         var thankyou = document.createElement('img');
         var thankyou_src = siteroot + "templates/protostar_trial/images/Animations/0" + getRandomIntInclusive(1,5) + ".gif";
@@ -50,12 +52,14 @@ window.onload = function() {
         thankyou.addEventListener('click', function() {
             thankyou.style.display = 'none';
             post_question.style.display = 'block';
+            discuss_wrapper.style.display = 'inline-block';
         });
 
         //set timeout do to the same
         setTimeout(function() {
             thankyou.style.display = 'none';
             post_question.style.display = 'block';
+            discuss_wrapper.style.display = 'inline-block';
         }, 8000);
     }
 }
