@@ -34,7 +34,7 @@ window.onload = function() {
         var siteroot  = document.getElementById('siteroot').innerHTML;
         var post_question = document.getElementsByClassName('moduletable')[0];
         post_question.style.display = 'none';
-        var parent = post_question.parentNode;
+
         var thankyou = document.createElement('img');
         var thankyou_src = siteroot + "templates/protostar_trial/images/Animations/0" + getRandomIntInclusive(1,5) + ".gif";
         thankyou.src = thankyou_src;
@@ -42,6 +42,9 @@ window.onload = function() {
         thankyou.style.cursor = 'pointer';
         thankyou.style['margin-left'] = 'auto';
         thankyou.style['margin-right'] = 'auto';
+        thankyou.style['max-width'] = '100%';
+
+        var parent = post_question.parentNode;
         parent.insertBefore(thankyou, post_question);
 
         thankyou.addEventListener('click', function() {
