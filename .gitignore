@@ -3,6 +3,7 @@
 *.log
 plugins/system/jSGCache
 
+media/com_easydiscuss/scripts/easydiscuss-*.js
 media/com_easydiscuss/resources/*.js
 media/com_easydiscuss/resources/*.json
 !media/com_easydiscuss/resources/default-*.js
