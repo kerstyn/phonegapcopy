@@ -2,3 +2,14 @@
 /tmp
 *.log
 plugins/system/jSGCache
+
+media/com_easydiscuss/scripts/easydiscuss-*.js
+media/com_easydiscuss/resources/*.js
+media/com_easydiscuss/resources/*.json
+!media/com_easydiscuss/resources/default-*.js
+!media/com_easydiscuss/resources/default-*.json
+!media/com_easydiscuss/resources/index.html
+media/com_easydiscuss/config/*.js
+media/com_easydiscuss/config/*.json
+media/foundry/3.1/config/*.js
+media/foundry/3.1/config/*.json
